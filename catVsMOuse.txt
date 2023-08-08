@@ -1,0 +1,10 @@
+//Cats vs Mouse
+
+static String catAndMouse(int x, int y, int z) {
+       int cat1 = Math.abs(z-x);
+       int cat2 = Math.abs(z-y);
+       if(cat1>cat2) return "Cat B";
+       else if(cat2>cat1) return "Cat A";
+       else return "Mouse C";
+
+    }
