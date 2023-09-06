@@ -1,0 +1,29 @@
+/* Longest Consecutive Sequence 
+
+Problem link: https://leetcode.com/problems/longest-consecutive-sequence/submissions/    */
+
+
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        Arrays.sort(nums);
+        int n=nums.length;
+        int max = 0, longlen = 0 , ans = 0;
+        HashSet<Integer> map = new HashSet<>();
+        for(int i: nums){
+            map.add(i);
+        }
+        for(int i:map){
+            if(!map.contains(i-1)){
+                max = 1;
+                longlen = i;
+                while(map.contains(longlen+1)){
+                    max+=1;
+                    longlen+=1;
+                }
+            }
+            ans = Math.max(ans,max);
+        }
+        return ans;
+    }
+}
+
