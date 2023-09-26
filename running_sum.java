@@ -1,7 +1,7 @@
 /*problem link: https://leetcode.com/problems/running-sum-of-1d-array/ */
 
 
-class Solution {
+class running_sum {
     public int[] runningSum(int[] nums) {
         int n  = nums.length;
         int[] runningSum = new int[n];
