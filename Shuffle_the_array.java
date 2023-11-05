@@ -1,4 +1,4 @@
-/*problem link:  https://leetcode.com/problems/shuffle-the-array/description/ */
+/*problem link:  https://leetcode.com/problems/shuffle-the-array/description/  */
 
 class Solution {
     public int[] shuffle(int[] nums, int n) {
