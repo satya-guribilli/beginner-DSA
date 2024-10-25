@@ -10,7 +10,7 @@ class Solution:
         if n==0:
             return 1
         elif n<0:
-            return 1/self.binaryExp(x,-n)
+            return 1/self.binaryExp(x,n)
         elif n%2==0:
             return self.binaryExp((x*x)%mod, n//2)
         else:
